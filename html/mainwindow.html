@@ -1,0 +1,154 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="ChoozeCategory" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+    
+    	<!--<div class="TnxForm">
+	    	<button class="close" type="button" data-dismiss="modal" aria-hidden="true">
+	    	<span class="Close"></span>
+	    	</button>
+	    	<div class="Block">
+	    	<h2>Спасибо!</h2>
+	    	<p>Мы свяжемся с вами в течение нескольких часов</p>
+	    	</div>
+	    </div><!--TnxBlock-->
+	    
+      <div class="modal-header">
+      
+        <button class="close" type="button" data-dismiss="modal" aria-hidden="true">
+	        <span class="Close"></span>
+	    </button>
+	    
+        <h4 class="modal-title" id="myModalLabel">Узнать стоимость перевозки</h4>
+        
+        
+  		
+      </div><!--modal-header-->
+      
+      <div class="modal-body">
+   
+      	<div class="row ">
+      	<div class="col-sm-12 DeliveryType clearfix">
+  		    <ul>
+  		    	<li class="Active"><a href="#">Для сборных грузов</a></li>
+  		    	<li><a href="#">Для генеральных грузов</a></li>
+  		    </ul>
+  		</div><!--DeliveryType-->
+      		<form role="form">
+      			<!-- "has-success" правильный ввод "has-error" ошибка ввода-->
+			  	<div class="col-sm-12">
+			  		<label for="InputCity">Откуда</label>
+					 <input type="text" class="form-control " id="InputCity" placeholder="Город (откуда), Улица, номер дома">
+					 
+			  	</div>
+			  	
+			  	<div class="col-sm-12">
+			  		<label for="InputCityWhere">Куда</label>
+					<input type="text" class="form-control  " id="InputStreet" placeholder="Город (куда) Улица, номер дома">
+			  	</div>
+			  	
+			  	
+			  	<div class="col-sm-12 ChoozeCar ">
+			  		
+				  	<label for="exampleInputEmail1">Выберете подходящую машину</label>
+			  	</div><!--ChoozeCar-->
+			  	
+			  	<div class="col-sm-12">
+				  	<div id="TypeCarChoose" class="form-group" >
+					  	<div class="OpacityWindow " data-toggle="modal" data-target="#ChooseCarWindow">
+					  	</div><!--OpacityWindow-->
+					  	<select  class="selectpicker">
+	    	  				<option>Выберете машину</option>
+	    	  			</select>	      		
+	    	  		</div><!--TypeCarChoose-->
+			  	</div><!--col-sm-12-->
+			  	
+			  	
+			  	<div id="CoosenCar">
+					  
+					  	<div class="col-sm-12">
+					  			<span class="Img"><img class="img-responsive" src="img/c1.png" alt="s1" /></span>
+						  		<h3>Газель тент</h3>
+							  		<p class="Weight">1,5 тонны, 9 м&#179;</p>
+							  		<p class="Price">450 <span>руб. / час</span></p>
+
+					  		</div>
+				</div><!--CoosenCar-->
+			  	 
+			  	<div id="MoreForm">
+			  		<div class="MainPrice clearfix">
+			  				Стоимость доставки: <span>&asymp; 18 950</span> руб.
+			  				<div class="clearfix">
+			  					<a  href="#">пересчитать </a > 
+			  					<a class="ShowHidePriceBut"  href="#">подробнее цене</a >
+			  				</div>	
+			  		<div class="ShowHidePriceBlock">
+			  			<table class="table">
+			  				<tr>
+				  				<td>Машина</td>
+				  				<td>235 руб</td>
+			  				</tr>
+			  				<tr>
+				  				<td>Налоги</td>
+				  				<td>235 руб</td>
+			  				</tr>
+			  				<tr>
+				  				<td>Машина</td>
+				  				<td>235 руб</td>
+			  				</tr>
+			  			</table>
+			  		</div><!--ShowHideBlock-->	
+		  			</div><!--MainPrice-->
+		  			
+		  			<div class="Manager">
+		  				<h4>Оформите заявку на машину прямо сейчас</h3>
+			  				<p>Наш менеджер сразу же свяжется с вами</p>
+		  			</div>	
+				  	<div class="form-group textarea">
+			  			  <label for="InputDescription">Опишите груз</label>
+			  			  <textarea class="form-control" rows="3">Кратко опишите груз ( температурный режим требования)
+				  			
+			  			  </textarea>
+			  			</div><!--textarea-->
+			  			
+			  		<div class="form-group">
+			  			  <label for="InputWhen">Когда</label>
+			  			  
+			  			  <input  type="text" class="form-control" placeholder="Когда планируется перевозка?"  id="datepicker">
+			  			  		
+			  			  </div> <!--form-group-->
+			  		
+			  		<div class="row form-group">
+
+			  				<div class="col-sm-6">
+			  					<label for="InputName">Имя</label>
+				  				<input type="text" class="form-control" id="InputName" placeholder="Введите Имя">
+				  			</div>
+				  			
+				  			<div class="col-sm-6 ">
+			  					<label for="InputPhone">Телефон</label>
+			  				     <input type="text" class="form-control" id="InputPhone" placeholder="Введите телефон">
+			  				    
+			  				</div>
+				  			
+		  				</div><!--row form-group-->
+		  				
+			  			<div class="form-group ">
+			  			  <label for="InputEmail">Email</label>
+			  			  
+			  			  <input type="email" class="form-control" id="InputEmail" placeholder="Введите email">
+			  			  
+			  			</div>  
+			  		</div><!--MoreForm-->
+			  	
+				  	<div id="FormShow"  class="btn btn-default btn-lg">Рассчитать</div>
+      		</form>
+		      
+      	</div><!--row-->
+      	 
+      	   
+         
+      </div><!--modal-body-->
+      
+    </div>
+  </div>
+</div><!--myModalPhone-->

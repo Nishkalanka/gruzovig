@@ -1,0 +1,61 @@
+<div class="modal fade" id="myModalPhone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content CallMe">
+    
+    	<div class="TnxCall">
+	    	<button class="close" type="button" data-dismiss="modal" aria-hidden="true">
+	    	<span class="Close"></span>
+	    	</button>
+	    	<div class="Block">
+	    	<h2>Спасибо!</h2>
+	    	<p>Мы свяжемся с вами в течение нескольких часов</p>
+	    	</div>
+	    </div><!--TnxBlock-->
+	    
+      <div class="modal-header">
+      
+        <button class="close" type="button" data-dismiss="modal" aria-hidden="true">
+	        <span class="Close"></span>
+	    </button>
+	    
+        <h4 class="modal-title" id="myModalLabel">Обратный звонок</h4>
+        <p>наш менеджер свяжется с вами уже сегодня </p>
+      </div>
+      <div class="modal-body">
+      <form role="form">
+      	<div class="row">
+      		<div class="col-sm-12">
+      			<!--Поле с ошибкой .has-error в классе .form-group 
+	      			
+	      			если не введено ничего добавляется класс .ForEmpty
+	      			если введено с ошибкой добавляется класс .ForError
+      			-->
+	      		<div class="form-group">
+	      			<label class="control-label Empty" for="inputError">Вы не ввели свое имя. Представтесь пожалйста</label>
+	      			<label class="control-label Error" for="inputError"> Имя не может содержать в себе цифр. Если  только вы не R2D2:)</label>
+		      		<input id="inputNameTwo" class="form-control" type="text" placeholder="Ваше имя">
+		      	</div>
+		      </div>
+		      
+		      <div class="col-sm-12">
+		      <!--Поле с ошибкой .has-error в классе .form-group 
+	      			
+	      			если не введено ничего добавляется класс .ForEmpty
+	      			если введено с ошибкой добавляется класс .ForError
+      			-->
+	      		<div class="form-group">
+	      			<label class="control-label Empty" for="inputError">Вы не ввели свое имя. Представтесь пожалйста</label>
+	      			<label class="control-label Error" for="inputError"> Имя не может содержать в себе цифр. Если  только вы не R2D2:)</label>
+		      		<input id="inputPhoneTwo" class="form-control" type="text" placeholder="Введите телефон">
+		      	</div>
+		      </div>
+		      
+      	</div><!--row-->
+      </form>	 
+      	   
+         <button type="button" class="GoFormTo btn btn-default" >Перезвоните мне</button>
+      </div>
+      
+    </div>
+  </div>
+</div><!--myModalPhone-->
